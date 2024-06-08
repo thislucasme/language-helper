@@ -15,7 +15,7 @@ export const BotMessageComponent = ({
           textAlign={"start"}
           maxW={500}
           color={"black"}
-          bg={"#4AD897"}
+          bg={message.similaridade >= 95 ? "#4AD897": "orange"}
           padding={2}
           borderRadius={10}
         >

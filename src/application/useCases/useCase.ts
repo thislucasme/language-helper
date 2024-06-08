@@ -13,13 +13,21 @@ export const generateBotResponse = (userMessage: Message, dialogs: Dialog[]): Me
       dialogResponse = element
     }
   });
-  if (bestSimilaridade > 70) {
+  if (bestSimilaridade < 95) {
     return {
-      text: dialogResponse.response,
+      text: `Возможно, вы имели в виду: ${dialogResponse.question}`,
       sender: "bot",
       tipo: 3,
       similaridade: bestSimilaridade
     };
+  }else if(bestSimilaridade >= 95) {
+    return {
+      text: `${dialogResponse.response}`,
+      sender: "bot",
+      tipo: 3,
+      similaridade: bestSimilaridade
+    };
+
   } else {
     return {
       text: "Desculpe, não entendi sua pergunta.",
