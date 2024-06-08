@@ -39,7 +39,7 @@ export const Chat: React.FC = () => {
     };
 
     return (
-        <Flex direction="column" height="90vh">
+        <Flex direction="column" height="80vh">
             <Box flex="1" overflowY="auto" maxHeight="calc(100vh - 100px)" ref={messageListRef}>
                 <MessageList senderColor="#000000" senderBackground="#D3D6D6" messages={messages} />
             </Box>
