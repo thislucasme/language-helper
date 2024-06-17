@@ -83,6 +83,4 @@ We welcome contributions to enhance the features and functionality of the bot. F
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
 
-Feel free to modify this template to better suit your project's specific details and requirements!
