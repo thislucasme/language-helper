@@ -1,6 +1,3 @@
-Sure! Here's an enhanced version of your README file with a project description for your language learning bot that uses cosine similarity:
-
----
 
 # Language Learning Bot
 
